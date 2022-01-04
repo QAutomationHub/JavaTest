@@ -14,20 +14,20 @@ public class StreamDemo {
 
     public static void main(String[] args) {
 
-        File file = new File("./out_file.txt");
-
         // * способ 1
-        try(OutputStream out = new FileOutputStream(file, true)) {
-            out.write("I Love Java".getBytes());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        File file = new File("./out_file.txt");
+//        try(OutputStream out = new FileOutputStream(file, true)) {
+//            out.write("I Love Java".getBytes());
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
         // * способ 2
         /*
+        File file = new File("./out_file.txt");
         OutputStream out = null;
         try {
             out = new FileOutputStream(file); // перезаписывает, append: true - дописывает
