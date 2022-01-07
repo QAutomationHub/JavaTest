@@ -1,6 +1,6 @@
 package arrays;
 
-public class Arrays {
+public class ArraysMethods {
 
     // * сумма массива
     public static long getArraySum(int[] array) {
@@ -57,7 +57,14 @@ public class Arrays {
             }
         }
         return maxRepeat;
-
-
     }
+
+    // * меняем местами по индексу
+    public static void swap(Object[] array, int index1, int index2) {
+        Object buffer = array[index1];
+        array[index1] = array[index2];
+        array[index2] = buffer;
+    }
+
+
 }
