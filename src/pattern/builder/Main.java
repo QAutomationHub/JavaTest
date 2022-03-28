@@ -1,4 +1,4 @@
-package builder_pattern;
+package pattern.builder;
 
 public class Main {
     public static void main(String[] args) {

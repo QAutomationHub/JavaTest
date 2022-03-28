@@ -26,7 +26,6 @@ public class URLConnectionDemo {
         for (String k: headerFields.keySet()) {
             System.out.printf("Ключ: %s, ----------> Значение: %s \n", k, headerFields.get(k));
         }
-
     }
 
 
