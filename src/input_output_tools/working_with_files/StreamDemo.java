@@ -48,7 +48,7 @@ public class StreamDemo {
         }
         */
         // * Запись в файл (без буфера)
-        /*
+/*
         File file = new File("./out_file.txt");
 
         long start = System.currentTimeMillis();
@@ -65,7 +65,7 @@ public class StreamDemo {
         System.out.println(System.currentTimeMillis() - start);
 */
         // * Запись в файл (с буфером)
-        /*
+
         File file = new File("./out_file.txt");
 
         long start = System.currentTimeMillis();
@@ -80,23 +80,23 @@ public class StreamDemo {
             e.printStackTrace();
         }
         System.out.println(System.currentTimeMillis() - start);
-*/
+
 
         // * Чтение из файла
- /*
-        File file = new File("./out_file.txt");
+
+//        File file = new File("./out_file.txt");
 
         try (InputStream in = new FileInputStream(file)){
             do {
-                System.out.println((char) in.read());
+                System.out.print((char) in.read());
             } while (in.read() != -1);
-//            System.out.println((char) in.read());
+//            System.out.print((char) in.read());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-*/
+
 
         // * Запись в файл
 /*
@@ -141,17 +141,17 @@ public class StreamDemo {
 */
         // * ----- * -----  Чтение с кодировкой ----- * -----
 
-        File file = new File("ru.txt");
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-
-            String str = reader.readLine();
-            System.out.println(str);
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        File file = new File("ru.txt");
+//        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+//
+//            String str = reader.readLine();
+//            System.out.println(str);
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
     }

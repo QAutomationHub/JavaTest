@@ -8,10 +8,10 @@ public class Main {
 
         // * сумма массива
         long result = ArraysMethods.getArraySum(new int[] {1, 2, 3, 4, 5});
-        System.out.println(result);
+        System.out.println("сумма массива " + result);
 
         // * у массива [1, 2, 3, 4, 3, 2, 8, 7, 1] найти максимальное изменение высоты между соседями (вариант 1)
-        System.out.println(ArraysMethods.getMaxHeightDifferenceV1(new int []{1, 2, 3, 4, 3, 2, 8, 7, 1}));
+        System.out.println("максимальное изменение высоты между соседями " + ArraysMethods.getMaxHeightDifferenceV1(new int []{1, 23, 3, 4, 3, 2, 8, 7, 8}));
 
         // * у массива [1, 2, 3, 4, 3, 2, 8, 7, 1] найти максимальное изменение высоты между соседями (вариант 2)
         System.out.println(ArraysMethods.getMaxHeightDifferenceV2(new int []{1, 2, 3, 4, 3, 2, 8, 7, 1}));
