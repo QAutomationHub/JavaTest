@@ -1,6 +1,7 @@
 package Stream;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
@@ -10,6 +11,8 @@ import java.util.stream.Stream;
 public class StreamSources {
 
     public static void main(String[] args) {
+
+        // 0 - из коллекций (см. пред. пример)
 
         // 1 - набор произвольных данных
         Stream.of("My name is Vasya", 15, null, new Object());
@@ -34,7 +37,9 @@ public class StreamSources {
         Stream.generate(Math::random);
 
         // для случайных чисел
-
+        Random random = new Random();
+        random.ints(25, 0, 100)
+                .forEach(System.out::println);
 
 
     }
